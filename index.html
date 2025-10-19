@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Início - Legião Leonina</title>
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: 'Open Sans', sans-serif; }
+        header { background-color: #005e26; color: #FFFFFF; padding: 30px; display: flex; justify-content: space-between; align-items: center; }
+        .header-left { display: flex; align-items: center; }
+        .header-left img { margin-right: 15px; height: 60px; cursor: pointer; }
+        .header-left a { text-decoration: none; color: white; display: flex; align-items: center; }
+        h1 { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 2.5em; letter-spacing: 0.5px; margin: 0; }
+
+        nav { display: flex; font-family: 'Bebas Neue', sans-serif; align-items: center; }
+        nav > a, nav > span > a { color: white; text-decoration: none; margin-right: 20px; font-weight: 400; font-size: 1em; letter-spacing: 0.3px; }
+        nav span { position: relative; }
+        nav span div { 
+            display: none;
+            position: absolute;
+            top: 100%; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #005e26; 
+            padding: 12px; 
+            min-width: 120px; 
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+        nav span:hover div { 
+            display: block; 
+            opacity: 1; 
+            pointer-events: auto; 
+        }
+        nav span div a { display: block; margin: 3px 0; color: white; font-family: 'Bebas Neue', sans-serif; font-weight: 400; letter-spacing: 0.3px; }
+
+        .intro-section { display: flex; align-items: center; gap: 20px; padding: 40px; flex-wrap: wrap; }
+        .intro-text { 
+            background-color: #f5f5f5; 
+            border-radius: 15px; 
+            padding: 30px; 
+            position: relative; 
+            flex: 1 1 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .intro-text:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .intro-text p { font-size: 1em; line-height: 1.5; margin: 0; }
+        .intro-text a { 
+            position: absolute; 
+            bottom: 20px; 
+            right: 20px; 
+            background-color: #ff0000; 
+            color: white; 
+            text-decoration: none; 
+            padding: 8px 12px; 
+            border-radius: 6px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+        .intro-image { flex: 1 1 200px; }
+        .intro-image img { width: 100%; border-radius: 15px; object-fit: cover; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <a href="index.html">
+            <img src="imagens/favicon.png" alt="Logo">
+            <h1>Legião Leonina</h1>
+        </a>
+    </div>
+    <nav>
+        <a href="manifesto.html">Manifesto</a>
+        <span>
+            <a href="#">Institucional</a>
+            <div>
+                <a href="institucional/regulamento-interno.html">Regulamento Interno</a>
+                <a href="institucional/estrutura-orgânica.html">Estrutura Orgânica</a>
+            </div>
+        </span>
+        <a href="jornal-vanguarda.html"><span>Jornal <em>Vanguarda</em></span></a>
+        <a href="junte-se.html">Junta-te a nós</a>
+    </nav>
+</header>
+
+<div class="intro-section" style="align-items: flex-start;">
+    <div class="intro-text" style="flex: 1 1 400px; max-width: 1200px; position: relative; min-height: 384.8px; padding-bottom: 60px;">
+        <p>
+            O Patrianovismo é um movimento político nacionalista e fundamentado sob a Doutrina Social da Igreja. Nós, a Legião Leonina, enquanto um dos sucessores da Ação Patrianovista, reafirmamos nossos princípios irrevogáveis e inegociáveis: o estado confessional católico, a monarquia tradicional, o nacionalismo, a democracia orgânica corporativa e o municipalismo. Nosso objetivo é cultivar o respeito às tradições nacionais, promover a unidade da comunidade e defender valores éticos e morais sólidos. Acreditamos na importância de instituições fortes e na participação ativa de cada cidadão na construção de uma sociedade justa e ordenada.
+        </p>
+        <a href="manifesto.html" style="
+            position: absolute; 
+            bottom: 15px; 
+            right: 20px; 
+            background-color: #ff0000; 
+            color: white; 
+            text-decoration: none; 
+            padding: 8px 12px; 
+            border-radius: 6px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 0.9em;
+        ">Manifesto</a>
+    </div>
+    <div class="intro-image" style="flex: 0 0 400px;">
+        <img src="imagens/arlindoimg1.png" alt="Dr. Arlindo Veiga dos Santos, o fundador do patrianovismo." style="width: 400px; height: 384.8px; border-radius: 15px; object-fit: cover;">
+    </div>
+</div>
