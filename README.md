@@ -1,1 +1,1 @@
-# Legi-o-Leonina
+# Legião Leonina
